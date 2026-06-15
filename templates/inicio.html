@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% block title %}Pulso Gestão — Diagnóstico{% endblock %}
+{% block content %}
+<div class="container" style="display:flex;flex-direction:column;min-height:calc(100vh - 60px);justify-content:center">
+  <div class="card" style="text-align:center;padding:40px 24px">
+    <div style="font-size:56px;margin-bottom:16px">🔍</div>
+    <div class="titulo" style="font-size:26px;margin-bottom:12px">Diagnóstico<br>Empresarial</div>
+    <div class="subtitulo">
+      Identifique onde sua empresa está perdendo dinheiro e clientes sem perceber.
+    </div>
+    <div style="background:#f0f2f5;border-radius:12px;padding:16px;margin:20px 0;text-align:left">
+      <div style="font-size:13px;font-weight:700;color:#1B2B4B;margin-bottom:10px">O que será analisado:</div>
+      {% for item in [
+        ('👥', 'Clientes e Retenção'),
+        ('📊', 'Vendas e Orçamentos'),
+        ('🔄', 'Comunicação Interna'),
+        ('💰', 'Financeiro'),
+        ('⭐', 'Pós-Venda'),
+        ('⚙️', 'Processos e Tempo'),
+        ('📣', 'Marketing e Visibilidade'),
+      ] %}
+      <div style="display:flex;align-items:center;gap:10px;padding:6px 0;border-bottom:1px solid #e8ecf0;font-size:13px;color:#333">
+        <span>{{ item[0] }}</span><span>{{ item[1] }}</span>
+      </div>
+      {% endfor %}
+    </div>
+    <a href="{{ url_for('diagnostico') }}" class="btn">Iniciar Diagnóstico</a>
+  </div>
+</div>
+{% endblock %}

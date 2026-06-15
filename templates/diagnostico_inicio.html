@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+{% block title %}Dados da Empresa{% endblock %}
+{% block content %}
+<div class="container">
+  <div class="card" style="margin-top:20px">
+    <div class="secao-titulo">Passo 1 de 9</div>
+    <div class="titulo">Dados da Empresa</div>
+    <div class="subtitulo">Essas informações vão aparecer no relatório.</div>
+
+    <form method="POST">
+      {% for campo, label, tipo, placeholder in [
+        ('empresa',      'Nome da Empresa',     'text', 'Ex: Pet Shop do João'),
+        ('segmento',     'Segmento / Ramo',     'text', 'Ex: Pet shop, Clínica, Oficina...'),
+        ('cidade',       'Cidade — Estado',     'text', 'Ex: Extrema — MG'),
+        ('funcionarios', 'Número de Funcionários', 'number', 'Ex: 5'),
+      ] %}
+      <div style="margin-bottom:16px">
+        <label style="font-size:13px;font-weight:600;color:#1B2B4B;display:block;margin-bottom:6px">
+          {{ label }}
+        </label>
+        <input type="{{ tipo }}" name="{{ campo }}" placeholder="{{ placeholder }}"
+               style="width:100%;padding:14px;border:2px solid #e8ecf0;border-radius:12px;
+                      font-size:14px;font-family:inherit;outline:none;transition:border-color 0.15s"
+               onfocus="this.style.borderColor='#1B2B4B'"
+               onblur="this.style.borderColor='#e8ecf0'"
+               required>
+      </div>
+      {% endfor %}
+
+      <div style="margin-bottom:20px">
+        <label style="font-size:13px;font-weight:600;color:#1B2B4B;display:block;margin-bottom:6px">
+          Faturamento Mensal Aproximado
+        </label>
+        {% for val, label in [
+          ('Até R$ 20k',    'Até R$ 20.000'),
+          ('R$ 20k-50k',   'R$ 20.000 – R$ 50.000'),
+          ('R$ 50k-100k',  'R$ 50.000 – R$ 100.000'),
+          ('Acima R$ 100k','Acima de R$ 100.000'),
+          ('Prefere não informar', 'Prefere não informar'),
+        ] %}
+        <label class="opcao">
+          <input type="radio" name="faturamento" value="{{ val }}" required>
+          <div class="radio-circle"></div>
+          <span>{{ label }}</span>
+        </label>
+        {% endfor %}
+      </div>
+
+      <button type="submit" class="btn">Começar Diagnóstico →</button>
+    </form>
+  </div>
+</div>
+{% endblock %}

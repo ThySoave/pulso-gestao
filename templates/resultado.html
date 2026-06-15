@@ -1,0 +1,93 @@
+{% extends "base.html" %}
+{% block title %}Resultado — {{ empresa }}{% endblock %}
+{% block content %}
+<div class="container" style="margin-top:20px">
+
+  <div class="empresa-tag">{{ empresa }}</div>
+
+  <!-- Score geral -->
+  <div class="card" style="text-align:center;padding:32px 20px">
+    <div style="font-size:13px;font-weight:700;color:#666;text-transform:uppercase;
+                letter-spacing:1px;margin-bottom:16px">Pontuação Geral de Saúde</div>
+    <div class="score-circle" style="color:{{ nivel_cor }}">
+      <div class="score-number" style="color:{{ nivel_cor }}">{{ saude_geral }}</div>
+      <div class="score-label">de 100</div>
+    </div>
+    <div style="font-size:20px;font-weight:800;color:{{ nivel_cor }};margin-bottom:8px">
+      {{ nivel_label }}
+    </div>
+    <div style="font-size:13px;color:#666">
+      {% set criticos = namespace(n=0) %}
+      {% set atencao  = namespace(n=0) %}
+      {% for bid, bdata in resultado.items() %}
+        {% if bid != '_geral' and bdata.problemas is defined %}
+          {% for p in bdata.problemas %}
+            {% if p.gravidade == 'crítico' %}{% set criticos.n = criticos.n + 1 %}{% endif %}
+            {% if p.gravidade == 'atenção' %}{% set atencao.n  = atencao.n  + 1 %}{% endif %}
+          {% endfor %}
+        {% endif %}
+      {% endfor %}
+      <span style="color:#e74c3c;font-weight:700">{{ criticos.n }} problemas críticos</span>
+      &nbsp;·&nbsp;
+      <span style="color:#e67e22;font-weight:700">{{ atencao.n }} pontos de atenção</span>
+    </div>
+  </div>
+
+  <!-- Resultado por área -->
+  <div class="card" style="padding:16px 20px">
+    <div style="font-size:13px;font-weight:700;color:#1B2B4B;margin-bottom:14px">
+      Resultado por Área
+    </div>
+    {% for bloco in blocos %}
+      {% set bid   = bloco.id %}
+      {% set bdata = resultado.get(bid, {}) %}
+      {% set saude = bdata.get('saude', 0) %}
+      {% set probs = bdata.get('problemas', []) %}
+      {% if saude >= 75 %}{% set cor = '#2ecc71' %}{% set label = 'Saudável' %}
+      {% elif saude >= 50 %}{% set cor = '#f39c12' %}{% set label = 'Atenção' %}
+      {% elif saude >= 25 %}{% set cor = '#e74c3c' %}{% set label = 'Crítico' %}
+      {% else %}{% set cor = '#c0392b' %}{% set label = 'Urgente' %}{% endif %}
+
+      <div style="margin-bottom:14px">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:4px">
+          <span style="font-size:13px;font-weight:600">{{ bloco.icone }} {{ bloco.titulo }}</span>
+          <span style="font-size:12px;font-weight:700;color:{{ cor }}">{{ saude }}/100</span>
+        </div>
+        <div style="height:8px;background:#e8ecf0;border-radius:4px;overflow:hidden">
+          <div style="height:100%;width:{{ saude }}%;background:{{ cor }};border-radius:4px;
+                      transition:width 0.6s ease"></div>
+        </div>
+        {% if probs %}
+        <div style="margin-top:6px">
+          {% for p in probs[:2] %}
+          <div style="font-size:11px;color:{{ '#e74c3c' if p.gravidade == 'crítico' else '#e67e22' }};
+                      margin-top:3px">
+            {{ '🔴' if p.gravidade == 'crítico' else '🟡' }} {{ p.pergunta[:60] }}...
+          </div>
+          {% endfor %}
+          {% if probs|length > 2 %}
+          <div style="font-size:11px;color:#999;margin-top:2px">
+            + {{ probs|length - 2 }} mais no relatório completo
+          </div>
+          {% endif %}
+        </div>
+        {% endif %}
+      </div>
+    {% endfor %}
+  </div>
+
+  <!-- Ações -->
+  <div class="card">
+    <a href="{{ url_for('gerar_pdf') }}" class="btn">
+      📄 Baixar Relatório PDF Completo
+    </a>
+    <a href="{{ url_for('novo') }}" class="btn btn-outline" style="margin-top:10px">
+      + Novo Diagnóstico
+    </a>
+  </div>
+
+  <div style="text-align:center;font-size:12px;color:#999;padding:16px 0 32px">
+    Pulso Gestão · thyago.c@pulso-negocios.com
+  </div>
+</div>
+{% endblock %}

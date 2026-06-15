@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block title %}Observações{% endblock %}
+{% block content %}
+<div class="container" style="margin-top:24px">
+  <div class="empresa-tag">{{ empresa }}</div>
+  <div style="font-size:32px;margin-bottom:8px">💬</div>
+  <div class="titulo">Observações da Visita</div>
+  <div class="subtitulo">
+    Anote qualquer informação adicional que captou durante a conversa
+    e que deve aparecer no relatório.
+  </div>
+
+  <div class="card">
+    <form method="POST">
+      <div style="font-size:13px;font-weight:600;color:#1B2B4B;margin-bottom:10px">
+        Observações livres (opcional)
+      </div>
+      <textarea name="observacao"
+                placeholder="Ex: Empresa tem 3 pontos de venda. Dono reclamou muito de perder clientes para concorrente que abriu na mesma rua. Funcionária responsável pelo WhatsApp não tem treinamento..."></textarea>
+
+      <button type="submit" class="btn" style="margin-top:16px">
+        Ver resultado do diagnóstico →
+      </button>
+    </form>
+  </div>
+</div>
+{% endblock %}

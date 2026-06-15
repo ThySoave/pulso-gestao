@@ -1,0 +1,69 @@
+{% extends "base.html" %}
+{% block title %}{{ bloco.titulo }}{% endblock %}
+{% block header_right %}
+<div style="font-size:12px;color:rgba(255,255,255,0.7)">{{ idx + 1 }}/{{ total }}</div>
+{% endblock %}
+{% block content %}
+<div class="container">
+
+  <div style="margin-top:16px;margin-bottom:4px;display:flex;justify-content:space-between;
+              font-size:12px;color:#666">
+    <span>Progresso</span>
+    <span>{{ progresso }}%</span>
+  </div>
+  <div class="progress-bar">
+    <div class="progress-fill" style="width:{{ progresso }}%"></div>
+  </div>
+
+  <div class="empresa-tag">{{ empresa }}</div>
+
+  <div style="margin-bottom:6px">
+    <span style="font-size:32px">{{ bloco.icone }}</span>
+  </div>
+  <div class="secao_titulo" style="font-size:11px;font-weight:700;color:#E8A84C;
+       text-transform:uppercase;letter-spacing:1px;margin-bottom:4px">
+    Área {{ idx + 1 }} de {{ total }}
+  </div>
+  <div class="titulo" style="margin-bottom:4px">{{ bloco.titulo }}</div>
+  <div class="subtitulo">{{ bloco.descricao }}</div>
+
+  <form method="POST" id="form-bloco">
+    {% for perg in bloco.perguntas %}
+    <div class="pergunta-card">
+      <div class="pergunta-texto">{{ loop.index }}. {{ perg.texto }}</div>
+      {% for opcao_texto, opcao_pontos in perg.opcoes %}
+      <label class="opcao">
+        <input type="radio" name="{{ perg.id }}" value="{{ loop.index0 }}" required>
+        <div class="radio-circle"></div>
+        <span>{{ opcao_texto }}</span>
+      </label>
+      {% endfor %}
+    </div>
+    {% endfor %}
+
+    <button type="submit" class="btn" style="margin-top:8px;margin-bottom:24px">
+      {% if idx + 1 < total %}
+        Próxima área →
+      {% else %}
+        Finalizar perguntas →
+      {% endif %}
+    </button>
+  </form>
+</div>
+
+<script>
+// Scroll automático para a próxima pergunta ao selecionar
+document.querySelectorAll('.opcao input').forEach(function(input) {
+  input.addEventListener('change', function() {
+    var cards = document.querySelectorAll('.pergunta-card');
+    var atual = this.closest('.pergunta-card');
+    var idx   = Array.from(cards).indexOf(atual);
+    if (idx < cards.length - 1) {
+      setTimeout(function() {
+        cards[idx + 1].scrollIntoView({behavior: 'smooth', block: 'center'});
+      }, 200);
+    }
+  });
+});
+</script>
+{% endblock %}
