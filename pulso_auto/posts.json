@@ -1,0 +1,23 @@
+[
+  {
+    "titulo": "Post de Apresentação",
+    "imagem": "01_apresentacao.jpg",
+    "legenda": "Oi, eu sou o Thyago. 👋\n\nTrabalho ajudando donos de pequenas empresas a enxergar o que está travando o crescimento do negócio deles.\n\nNão é consultoria de PowerPoint.\nNão é curso online.\nÉ presencial, direto, com diagnóstico gratuito.\n\nA gente senta junto, analisa o que está acontecendo na sua operação e você sai com um relatório mostrando onde está perdendo dinheiro — e o que fazer para parar de perder.\n\nSe você tem uma empresa e sente que trabalha muito mas o resultado não aparece, esse perfil é pra você.\n\nBem-vindo ao @pulsonegocios. 🔵",
+    "hashtags": "#consultoria #pme #pequenosnegocios #gestao #empreendedorismo #negócios #diagnostico #empresas",
+    "publicado": true
+  },
+  {
+    "titulo": "Clientes Sumindo",
+    "imagem": "02_clientes_sumindo.jpg",
+    "legenda": "Você sabe quantos clientes você perdeu esse mês?\n\nA maioria dos donos de negócio não sabe.\n\nO cliente some, e o dono só descobre semanas depois — quando o caixa aperta.\n\nIsso tem nome: falta de controle de retenção.\n\nCom um sistema simples, você vê em tempo real quem parou de comprar. E entra em contato antes de perder de vez.\n\nDiagnóstico gratuito para saber se isso está acontecendo na sua empresa. 👇",
+    "hashtags": "#retencaoclientes #gestao #pme #vendas #empreendedorismo #pequenosnegocios",
+    "publicado": false
+  },
+  {
+    "titulo": "Orçamentos sem Follow-up",
+    "imagem": "03_followup.jpg",
+    "legenda": "Você envia o orçamento e espera o cliente responder.\n\nEle não responde.\n\nVocê esquece. Ele esquece.\n\nA venda morreu — e você nem sabe que ela existia.\n\nIsso acontece em 20 a 40% das vendas de PMEs sem processo de follow-up.\n\nUm lembrete automático no momento certo pode recuperar essas vendas sem você precisar ligar para ninguém.",
+    "hashtags": "#followup #vendas #pme #gestao #empreendedorismo #pequenasempresas",
+    "publicado": false
+  }
+]
