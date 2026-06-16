@@ -1,23 +1,149 @@
 [
   {
     "titulo": "Post de Apresentação",
-    "imagem": "01_apresentacao.jpg",
+    "frase": "Bem-vindo ao Pulso Negócios.",
     "legenda": "Oi, eu sou o Thyago. 👋\n\nTrabalho ajudando donos de pequenas empresas a enxergar o que está travando o crescimento do negócio deles.\n\nNão é consultoria de PowerPoint.\nNão é curso online.\nÉ presencial, direto, com diagnóstico gratuito.\n\nA gente senta junto, analisa o que está acontecendo na sua operação e você sai com um relatório mostrando onde está perdendo dinheiro — e o que fazer para parar de perder.\n\nSe você tem uma empresa e sente que trabalha muito mas o resultado não aparece, esse perfil é pra você.\n\nBem-vindo ao @pulsonegocios. 🔵",
     "hashtags": "#consultoria #pme #pequenosnegocios #gestao #empreendedorismo #negócios #diagnostico #empresas",
     "publicado": true
   },
   {
     "titulo": "Clientes Sumindo",
-    "imagem": "02_clientes_sumindo.jpg",
+    "frase": "Você sabe quantos clientes perdeu esse mês?",
     "legenda": "Você sabe quantos clientes você perdeu esse mês?\n\nA maioria dos donos de negócio não sabe.\n\nO cliente some, e o dono só descobre semanas depois — quando o caixa aperta.\n\nIsso tem nome: falta de controle de retenção.\n\nCom um sistema simples, você vê em tempo real quem parou de comprar. E entra em contato antes de perder de vez.\n\nDiagnóstico gratuito para saber se isso está acontecendo na sua empresa. 👇",
     "hashtags": "#retencaoclientes #gestao #pme #vendas #empreendedorismo #pequenosnegocios",
-    "publicado": false
+    "publicado": true
   },
   {
     "titulo": "Orçamentos sem Follow-up",
-    "imagem": "03_followup.jpg",
+    "frase": "20% das suas vendas morreram no silêncio.",
     "legenda": "Você envia o orçamento e espera o cliente responder.\n\nEle não responde.\n\nVocê esquece. Ele esquece.\n\nA venda morreu — e você nem sabe que ela existia.\n\nIsso acontece em 20 a 40% das vendas de PMEs sem processo de follow-up.\n\nUm lembrete automático no momento certo pode recuperar essas vendas sem você precisar ligar para ninguém.",
     "hashtags": "#followup #vendas #pme #gestao #empreendedorismo #pequenasempresas",
+    "publicado": false
+  },
+  {
+    "titulo": "Precificação Errada",
+    "frase": "Você sabe qual é a sua margem real?",
+    "legenda": "67% das pequenas empresas não sabem a margem real de cada produto ou serviço.\n\nEles vendem, recebem, pagam as contas... e acham que estão lucrando.\n\nMas quando alguém faz a conta certinha, descobre que estava trabalhando de graça — ou até no prejuízo.\n\nO problema não é vender pouco. É não saber o quanto sobra de verdade.\n\nIsso tem solução. E começa com um diagnóstico gratuito. 👇",
+    "hashtags": "#precificacao #margem #pme #financeiro #gestao #empreendedorismo #pequenosnegocios",
+    "publicado": false
+  },
+  {
+    "titulo": "Financeiro no Improviso",
+    "frase": "Caixa apertado todo mês? Isso não é azar.",
+    "legenda": "90% das PMEs que passam por crise financeira têm um problema em comum:\n\nNão sabem exatamente quanto vão receber no próximo mês.\n\nNão porque o negócio vai mal — mas porque ninguém controla o que está por vir.\n\nContas que vencem de surpresa. Clientes que atrasam. Boletos que aparecem do nada.\n\nIsso não é azar. É falta de controle financeiro.\n\nA gente mostra onde está o furo. Diagnóstico gratuito. 👇",
+    "hashtags": "#financeiro #fluxodecaixa #pme #gestao #empreendedorismo #pequenosnegocios #controledecaixa",
+    "publicado": false
+  },
+  {
+    "titulo": "Pós-Venda Inexistente",
+    "frase": "O cliente comprou. E depois? Silêncio.",
+    "legenda": "A venda acabou. Você entregou. Ficou esperando o cliente voltar.\n\nEle não voltou.\n\nIsso acontece em 70% das pequenas empresas. Ninguém faz pós-venda.\n\nE aí o cliente que poderia comprar de novo, indicar amigos e virar fã da sua marca... simplesmente some.\n\nUm processo simples de acompanhamento pós-venda pode dobrar a sua receita sem precisar conquistar nenhum cliente novo.\n\nDiagnóstico gratuito para ver o que você está deixando na mesa. 👇",
+    "hashtags": "#posvenda #retencao #pme #vendas #gestao #empreendedorismo #clientes",
+    "publicado": false
+  },
+  {
+    "titulo": "Tarefas Manuais",
+    "frase": "Quanto tempo você perde fazendo o que um sistema faria em segundos?",
+    "legenda": "Planilha para controlar cliente.\nCaderno para anotar pedido.\nWhatsApp para avisar a equipe.\nPapel para fazer orçamento.\n\nEsse é o dia a dia de milhares de pequenas empresas.\n\nE isso tem um custo invisível: horas do dono todo dia fazendo tarefas que não geram resultado.\n\nEsse tempo poderia estar em vendas, atendimento, ou simplesmente em descanso.\n\nA gente mostra o que pode ser automatizado na sua empresa. Grátis. 👇",
+    "hashtags": "#automacao #produtividade #pme #gestao #empreendedorismo #pequenosnegocios #sistema",
+    "publicado": false
+  },
+  {
+    "titulo": "Dono Refém do Negócio",
+    "frase": "Se você sair uma semana, o que para?",
+    "legenda": "Essa é uma das perguntas do nosso diagnóstico.\n\nE a maioria dos donos de pequenas empresas responde: \"quase tudo\".\n\nO negócio depende de você para funcionar.\nVocê não tira férias.\nVocê não fica doente.\nVocê não pode sumir por uma semana.\n\nIsso não é dedicação. É uma armadilha.\n\nUm negócio saudável funciona sem o dono presente o tempo todo.\n\nA gente ajuda você a chegar lá. Diagnóstico gratuito. 👇",
+    "hashtags": "#donodenegocio #pme #gestao #processos #empreendedorismo #pequenosnegocios #liberdade",
+    "publicado": false
+  },
+  {
+    "titulo": "Indicação como Único Canal",
+    "frase": "Depender só de indicação é arriscado.",
+    "legenda": "Indicação é ótimo. Mas e quando para de chegar?\n\nA maioria das pequenas empresas depende 100% de indicação para conseguir clientes novos.\n\nSem estratégia. Sem presença online. Sem processo de prospecção.\n\nUm mês bom, um mês ruim. E assim vai.\n\nUm negócio saudável tem mais de um canal trazendo cliente. E você controla quando quer crescer, não espera a sorte bater na porta.\n\nDiagnóstico gratuito para ver como está o seu canal de aquisição. 👇",
+    "hashtags": "#marketing #captacao #pme #vendas #gestao #empreendedorismo #clientes",
+    "publicado": false
+  },
+  {
+    "titulo": "O Problema Invisível",
+    "frase": "O maior risco não é o que você vê. É o que você não vê.",
+    "legenda": "Todo dono de negócio sabe que tem problemas.\n\nMas a maioria dos problemas que quebram uma empresa não aparecem de repente.\n\nEles estavam lá há meses — silenciosos, crescendo devagar, drenando caixa, afastando clientes.\n\nAté o dia que a conta não fecha.\n\nO diagnóstico gratuito do Pulso Negócios foi feito exatamente para isso: revelar o que está escondido antes que vire crise.\n\nAgende agora. 👇",
+    "hashtags": "#diagnostico #pme #gestao #empreendedorismo #pequenosnegocios #risco #negócios",
+    "publicado": false
+  },
+  {
+    "titulo": "Trabalha Muito, Ganha Pouco",
+    "frase": "Trabalhar muito e ganhar pouco tem solução.",
+    "legenda": "Você abre cedo, fecha tarde.\nAtende cliente, resolve problema, paga conta.\nNo fim do mês, sobra pouco — ou não sobra nada.\n\nIsso não é falta de esforço.\n\nÉ sinal de que alguma coisa no negócio está torta.\n\nPreço errado. Custo fora de controle. Processo ineficiente. Venda que não se converte.\n\nA gente senta com você, analisa e mostra onde está o problema. Sem custo.\n\nAgenda o diagnóstico. 👇",
+    "hashtags": "#pme #gestao #empreendedorismo #pequenosnegocios #resultado #financeiro #donodenegocio",
+    "publicado": false
+  },
+  {
+    "titulo": "Inadimplência",
+    "frase": "Quanto você tem para receber e não está cobrando?",
+    "legenda": "Clientes que pagam atrasado.\nBoletos que foram enviados e esquecidos.\nNome no caderno que nunca foi cobrado.\n\nEssa é a realidade financeira de boa parte das pequenas empresas.\n\nE sabe qual é o pior? O dono sabe que tem dinheiro preso — mas não tem um processo para cobrar.\n\nSistema de cobrança não é luxo. É sobrevivência.\n\nDiagnóstico gratuito para ver quanto está parado. 👇",
+    "hashtags": "#inadimplencia #cobranca #financeiro #pme #gestao #fluxodecaixa #pequenosnegocios",
+    "publicado": false
+  },
+  {
+    "titulo": "Comunicação Interna",
+    "frase": "Sua equipe sabe o que precisa fazer hoje?",
+    "legenda": "\"Achei que você ia fazer.\"\n\"Ninguém me avisou.\"\n\"Não sabia que era para hoje.\"\n\nSe você já ouviu essas frases na sua empresa, o problema é de comunicação interna.\n\nInformação que fica só na cabeça do dono ou em grupos de WhatsApp nunca chega certa para quem precisa.\n\nE quando a informação falha, o cliente paga o preço.\n\nA gente mostra como organizar isso. Diagnóstico gratuito. 👇",
+    "hashtags": "#equipe #comunicacao #pme #gestao #processos #empreendedorismo #pequenosnegocios",
+    "publicado": false
+  },
+  {
+    "titulo": "Meta de Crescimento",
+    "frase": "Você tem meta ou tem esperança?",
+    "legenda": "\"Quero crescer esse ano.\"\n\nÉ o que todo dono de empresa diz.\n\nMas crescer quanto? Em qual área? Até quando? Com qual estratégia?\n\nSem número, sem prazo e sem plano, não é meta — é esperança.\n\nE esperança não paga conta.\n\nO diagnóstico do Pulso Negócios identifica onde estão as maiores oportunidades de crescimento para o SEU negócio.\n\nNão genérico. Específico para a sua realidade.\n\nAgenda. É gratuito. 👇",
+    "hashtags": "#metas #crescimento #pme #planejamento #gestao #empreendedorismo #resultado",
+    "publicado": false
+  },
+  {
+    "titulo": "Estoque Descontrolado",
+    "frase": "Você sabe o que tem no estoque agora?",
+    "legenda": "\"Acho que tem.\"\n\"Deixa eu verificar.\"\n\"Precisa comprar mais.\"\n\nQuando o controle de estoque é esse, duas coisas acontecem:\n\n1. Você compra o que já tem.\n2. Você vende o que não tem.\n\nOs dois custam dinheiro.\n\nUm sistema de controle simples elimina esse problema e libera capital que está parado na prateleira.\n\nDiagnóstico gratuito para ver como está o seu estoque. 👇",
+    "hashtags": "#estoque #controle #pme #gestao #operacao #empreendedorismo #pequenosnegocios",
+    "publicado": false
+  },
+  {
+    "titulo": "Tempo do Dono",
+    "frase": "O seu tempo é o ativo mais caro do negócio.",
+    "legenda": "Dono de empresa tem tempo limitado.\n\nO problema é que a maioria passa esse tempo em tarefas que qualquer sistema ou processo faria melhor.\n\nResponder mensagem. Controlar pagamento. Fazer orçamento na mão. Lembrar de cobrar.\n\nTudo isso parece pequeno.\n\nMas some as horas por semana — e você vai perceber que está investindo seu tempo no lugar errado.\n\nA gente ajuda a liberar o seu tempo para o que realmente importa. 👇",
+    "hashtags": "#tempo #produtividade #pme #donodenegocio #gestao #automacao #empreendedorismo",
+    "publicado": false
+  },
+  {
+    "titulo": "Diagnóstico Real",
+    "frase": "Como está a saúde do seu negócio de verdade?",
+    "legenda": "Não na teoria. Na prática.\n\nVendas caindo ou crescendo?\nClientes satisfeitos ou sumindo?\nMargem saudável ou no limite?\nEquipe alinhada ou no escuro?\nFinanceiro controlado ou no improviso?\n\nA maioria dos donos não sabe responder com precisão.\n\nO diagnóstico do Pulso Negócios responde essas perguntas em uma única visita — e te entrega um relatório com as prioridades.\n\nGratuito. Presencial. Sem enrolação. 👇",
+    "hashtags": "#diagnostico #saudeempresarial #pme #gestao #empreendedorismo #resultado #pequenosnegocios",
+    "publicado": false
+  },
+  {
+    "titulo": "Pequena Empresa Grande Potencial",
+    "frase": "Pequena empresa não significa pequeno resultado.",
+    "legenda": "As maiores oportunidades de crescimento estão em empresas que ainda não foram organizadas.\n\nUma pequena empresa com processo, controle e sistema certo pode dobrar o resultado sem precisar dobrar o esforço.\n\nNão é magia. É gestão.\n\nA diferença entre a empresa que cresce e a que fica parada geralmente não é o mercado, o produto ou a localização.\n\nÉ o controle de dentro.\n\nA gente mostra o que está faltando na sua. Diagnóstico gratuito. 👇",
+    "hashtags": "#pequenosnegocios #crescimento #gestao #pme #empreendedorismo #resultado #sistema",
+    "publicado": false
+  },
+  {
+    "titulo": "Primeiro Passo",
+    "frase": "O primeiro passo é saber onde você está.",
+    "legenda": "Você não pode melhorar o que não conhece.\n\nAntes de mudar qualquer coisa na empresa, você precisa entender o que está funcionando e o que está travando.\n\nÉ por isso que o diagnóstico vem antes de qualquer implantação.\n\nA gente não chega com uma solução pronta. A gente chega com perguntas certas — e vai embora com as respostas que você precisa.\n\nAgende sua visita. É gratuito e sem compromisso. 👇",
+    "hashtags": "#diagnostico #pme #gestao #empreendedorismo #pequenosnegocios #primeiropassso #resultado",
+    "publicado": false
+  },
+  {
+    "titulo": "Sem Sistema é na Memória",
+    "frase": "Negócio que roda na memória do dono não escala.",
+    "legenda": "Você sabe de tudo.\nSó você sabe onde está cada coisa.\nSó você sabe o preço, o processo, o cliente, o fornecedor.\n\nIsso é um risco enorme.\n\nSe você parar, o negócio para junto.\n\nNegócio que roda na cabeça do dono não cresce — porque o dono não tem capacidade de estar em todo lugar ao mesmo tempo.\n\nA gente ajuda a tirar o negócio da sua cabeça e colocar em um sistema. 👇",
+    "hashtags": "#sistema #processos #pme #gestao #escalabilidade #empreendedorismo #pequenosnegocios",
+    "publicado": false
+  },
+  {
+    "titulo": "Resultado de Verdade",
+    "frase": "Resultado não é faturamento. É o que sobra.",
+    "legenda": "Muita empresa fatura bem.\n\nMas no fim do mês, quando paga tudo — fornecedor, funcionário, aluguel, imposto — não sobra quase nada.\n\nFaturamento é vaidade. Lucro é realidade.\n\nE a maioria das pequenas empresas não sabe ao certo quanto está lucrando de verdade.\n\nO diagnóstico do Pulso Negócios inclui uma análise financeira para mostrar onde o dinheiro está sumindo.\n\nGratuito. 👇",
+    "hashtags": "#lucro #faturamento #financeiro #pme #gestao #empreendedorismo #resultado #pequenosnegocios",
     "publicado": false
   }
 ]
