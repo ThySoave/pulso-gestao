@@ -1,6 +1,11 @@
 # Pulso Gestão
 
-Ferramentas de diagnóstico e automação comercial que uso na consultoria para PMEs.
+Agência de sites e automação comercial para PMEs. Este repositório reúne as ferramentas de
+diagnóstico e conteúdo da operação.
+
+> O motor de prospecção outbound da agência — 7 agentes encadeados de scout, qualificação por
+> score, enriquecimento, disparo por WhatsApp e CRM com kanban — não é publicado aqui: opera
+> sobre base de leads reais e credenciais de sessão.
 
 ## O problema
 
